@@ -1,0 +1,675 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: url(img/blue-4145659.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nav-bar ul {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+header .nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .header-content {
+  padding-top: 80px;
+  text-align: center;
+  width: 25%;
+}
+header .header-content p {
+  font-size: 20px;
+}
+header .header-content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+header button {
+  color: white;
+  background-color: #feab07;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  padding: 6px;
+  margin-top: 20px;
+}
+
+.belong {
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.belong h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+.belong p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+.belong .dash {
+  color: #feab07;
+  font-weight: bold;
+}
+
+.belong-gallery {
+  padding: 0 3% 20px 3%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.belong-gallery .big-img {
+  background-image: url(img/belong\ big.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 81.5vh;
+}
+.belong-gallery .big-img .big-content {
+  padding-top: 60vh;
+  padding-left: 20px;
+}
+.belong-gallery .big-img .big-content h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.belong-gallery .big-img .big-content p {
+  font-size: 14px;
+}
+.belong-gallery .big-img .big-content button {
+  color: white;
+  background-color: #feab07;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  padding: 6px;
+  margin-top: 20px;
+}
+.belong-gallery .column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.belong-gallery .column-1 .card-1 {
+  background-image: url(img/orlando.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30vw;
+  height: 40vh;
+}
+.belong-gallery .column-1 .card-1 .first-content {
+  padding-top: 25vh;
+}
+.belong-gallery .column-1 .card-1 .first-content p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.belong-gallery .column-1 .card-1 .first-content p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.belong-gallery .column-1 .card-1 .first-content h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.belong-gallery .column-1 .card-2 {
+  background-image: url(img/carribean.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30vw;
+  height: 40vh;
+}
+.belong-gallery .column-1 .card-2 .sec-content {
+  padding-top: 25vh;
+}
+.belong-gallery .column-1 .card-2 .sec-content p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.belong-gallery .column-1 .card-2 .sec-content p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.belong-gallery .column-1 .card-2 .sec-content h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.belong-gallery .column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.belong-gallery .column-2 .card-3 {
+  background-image: url(img/image\ 15.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30vw;
+  height: 40vh;
+}
+.belong-gallery .column-2 .card-3 .third-content {
+  padding-top: 25vh;
+}
+.belong-gallery .column-2 .card-3 .third-content p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.belong-gallery .column-2 .card-3 .third-content p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.belong-gallery .column-2 .card-3 .third-content h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.belong-gallery .column-2 .card-4 {
+  background-image: url(img/cruise\ ship.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30vw;
+  height: 40vh;
+}
+.belong-gallery .column-2 .card-4 .forth-content {
+  padding-top: 25vh;
+}
+.belong-gallery .column-2 .card-4 .forth-content p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.belong-gallery .column-2 .card-4 .forth-content p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.belong-gallery .column-2 .card-4 .forth-content h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+.deals {
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deals h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+.deals p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+.deals .dash {
+  color: #feab07;
+  font-weight: bold;
+}
+
+.deals-gallery {
+  padding: 0 10% 0 10%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.deals-gallery .hot-1 {
+  background-image: url(img/image\ 10.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 30%;
+}
+.deals-gallery .hot-1 .first-deal {
+  padding-top: 55vh;
+}
+.deals-gallery .hot-1 .first-deal p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.deals-gallery .hot-1 .first-deal p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.deals-gallery .hot-1 .first-deal h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.deals-gallery .hot-2 {
+  background-image: url(img/Frame\ 17.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 30%;
+}
+.deals-gallery .hot-2 .sec-deal {
+  padding-top: 55vh;
+}
+.deals-gallery .hot-2 .sec-deal p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.deals-gallery .hot-2 .sec-deal p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.deals-gallery .hot-2 .sec-deal h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.deals-gallery .hot-3 {
+  background-image: url(img/image\ 3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 30%;
+}
+.deals-gallery .hot-3 .third-deal {
+  padding-top: 55vh;
+}
+.deals-gallery .hot-3 .third-deal p {
+  color: white;
+  background-color: #feab07;
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-size: 14px;
+}
+.deals-gallery .hot-3 .third-deal p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.deals-gallery .hot-3 .third-deal h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.amalfi {
+  background-image: url(img/amalfi\ coast.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  margin: 40px 3% 0 3%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.amalfi h3 {
+  color: #feab07;
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: 25px;
+}
+.amalfi p {
+  color: white;
+  font-size: 14px;
+}
+.amalfi .coast {
+  font-weight: bold;
+  font-size: 30px;
+}
+.amalfi .coast .amal {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.amalfi button {
+  color: white;
+  background-color: #feab07;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  padding: 6px;
+  margin-top: 20px;
+}
+
+.world {
+  background-color: #feab07;
+  margin: 0 3% 0 3%;
+  padding: 5% 10% 5% 10%;
+  height: 30vh;
+  color: white;
+  display: flex;
+}
+.world .world-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 40%;
+}
+.world .world-text h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.world .world-text p {
+  font-size: 14px;
+}
+.world .world-text form {
+  padding-top: 10px;
+}
+.world .world-text form .email {
+  background-color: white;
+  border-style: none;
+  border-radius: 1px;
+  height: 30px;
+  width: 200px;
+  font-size: 12px;
+}
+.world .world-text form .button {
+  background-color: #28353e;
+  color: white;
+  height: 30px;
+  width: 100px;
+  font-size: 12px;
+  border-style: none;
+}
+.world .amalfi-container {
+  width: 50%;
+  display: flex;
+  align-self: flex-end;
+}
+
+.tours {
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tours h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+.tours p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+.tours .dash {
+  color: #feab07;
+  font-weight: bold;
+}
+
+.tours-gallery {
+  padding: 0 3% 0 3%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.tours-gallery .one {
+  background-image: url(img/image\ 20.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .two {
+  background-image: url(img/image\ 10.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .three {
+  background-image: url(img/image\ 21.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .four {
+  background-image: url(img/image\ 3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .five {
+  background-image: url(img/image\ 3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .six {
+  background-image: url(img/carribean.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .seven {
+  background-image: url(img/image\ 13.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tours-gallery .eight {
+  background-image: url(img/image\ 12.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24%;
+  height: 44%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  background-color: #28353e;
+  color: white;
+  font-size: 14px;
+  padding: 0 8% 0 8%;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-container .foot-content {
+  width: 40%;
+}
+footer .footer-container .foot-content p {
+  padding-top: 30px;
+}
+footer .footer-container .foot-content ul {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+footer .footer-container .contacts {
+  padding-top: 60px;
+  text-align: right;
+}
+footer .footer-container .contacts h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+footer .footer-container .contacts #tripmail {
+  color: #feab07;
+  padding-bottom: 20px;
+}
+footer .footer-container .contacts ul {
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+  gap: 10px;
+}
+footer .footer-container .contacts ul li a {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=style.css.map */

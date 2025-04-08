@@ -1,0 +1,571 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+$primary-color:#feab07;
+$secondary-color:#28353e;
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+@mixin b-style{
+    color: white;
+    background-color: $primary-color;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    padding: 6px;
+    margin-top: 20px;
+}
+header{
+    background-image: url(img/blue-4145659.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+    .nav-bar{
+
+        ul{
+            
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .header-content{
+        padding-top: 80px;
+        text-align: center;
+        width: 25%;
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+    }
+
+    button{
+      @include b-style();  
+    }
+}
+
+@mixin white-space {
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+
+    h2{ font-size: 32px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding-bottom: 10px;
+      
+    }
+    p{
+        font-size: 14px;
+        padding-top: 5px;
+        
+    }
+    .dash{
+        color: $primary-color;
+        font-weight: bold;
+    }
+}
+
+.belong{
+    @include white-space();
+}
+
+@mixin price-tag{
+    color: white;
+    background-color: $primary-color;
+    width: 120px;
+    height: 35px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+
+@mixin card-style{
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 40vh; 
+}
+
+.belong-gallery{
+    padding: 0 3% 20px 3%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 10px;
+    
+    .big-img{
+        background-image: url(img/belong\ big.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 81.5vh;
+       
+        .big-content{
+            padding-top: 60vh;
+            padding-left: 20px;
+        
+       
+      
+        h3{
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 5px;
+            
+        }
+        p{
+            font-size: 14px;
+        }
+        button{
+            @include b-style();
+        }
+    }
+    }
+
+    .column-1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .card-1{
+            background-image: url(img/orlando.webp);
+            @include card-style();
+            
+            .first-content{
+                padding-top: 25vh;
+                p{  @include price-tag();
+                    font-size: 14px;
+                    span{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+                h3{
+                   text-transform: capitalize;
+                   font-weight: bold;
+                   font-size: 25px;
+                   padding-bottom: 5px; 
+                }
+            }
+
+            
+        }
+        .card-2{
+            background-image: url(img/carribean.jpeg);
+            @include card-style();
+            
+            .sec-content{
+                padding-top: 25vh;
+                p{
+                    @include price-tag();
+                    font-size: 14px;
+                    span{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+                h3{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    font-size: 25px;
+                    padding-bottom: 5px; 
+                }
+            }
+        }
+      
+    }
+
+    .column-2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .card-3{
+            background-image: url(img/image\ 15.png);
+            @include card-style();
+            .third-content{
+                padding-top: 25vh;
+                p{
+                    @include price-tag();
+                    font-size: 14px;
+                    span{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+                h3{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    font-size: 25px;
+                    padding-bottom: 5px; 
+                } 
+            }
+        }
+        .card-4{
+            background-image: url(img/cruise\ ship.jpeg);
+            @include card-style();
+            .forth-content{
+                padding-top: 25vh;
+                p{
+                    @include price-tag();
+                    font-size: 14px;
+                    span{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+                h3{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    font-size: 25px;
+                    padding-bottom: 5px; 
+                } 
+            }
+        }
+
+    }
+}
+
+.deals{
+    @include white-space();
+}
+
+@mixin deal-card{
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        width: 30%;
+}
+
+
+@mixin deal-content{
+    padding-top: 55vh;
+            p{
+                @include price-tag();
+                font-size: 14px;
+                span{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            h3{
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 25px;
+                padding-top: 10px; 
+            } 
+}
+
+.deals-gallery{
+    padding: 0 10% 0 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    .hot-1{
+        background-image: url(img/image\ 10.png);
+        @include deal-card();
+
+        .first-deal{
+            @include deal-content();
+
+        }
+    }
+
+    .hot-2{
+        background-image: url(img/Frame\ 17.png);
+        @include deal-card();
+
+        .sec-deal{
+            @include deal-content();
+        }
+    }
+
+    .hot-3{
+        background-image: url(img/image\ 3.png);
+        @include deal-card();
+
+        .third-deal{
+            @include deal-content();
+        }
+    }
+}
+
+.amalfi{
+    background-image: url(img/amalfi\ coast.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    margin: 40px 3% 0 3%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3{
+        color: $primary-color;
+        font-weight: bold;
+        border-radius: 2px;
+        font-size: 25px;  
+    }
+    p{
+        color: white;
+        font-size: 14px;
+    }
+    .coast{
+        font-weight: bold;
+        font-size: 30px;
+        .amal{
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+    }
+    button{
+        @include b-style();
+    }
+}
+
+.world{
+    background-color: $primary-color;
+    margin: 0 3% 0 3%;
+    padding: 5% 10% 5% 10%;
+    height: 30vh;
+    
+    color: white;
+    display: flex;
+    
+    
+    .world-text{
+        display: flex;
+        flex-direction: column;
+       align-self: center;
+        width: 40%;
+        //border-left: white solid 2px;
+        h3{
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 14px
+            
+        }
+        form{
+            padding-top: 10px;
+            .email{
+                background-color: white;
+                border-style: none;
+                border-radius: 1px;
+                height: 30px;
+                width: 200px;
+                font-size: 12px
+            }
+            .button{
+                background-color: $secondary-color;
+                color: white;
+                height: 30px;
+                width: 100px;
+                font-size: 12px;
+                border-style: none;
+            }
+        }
+    }
+
+    .amalfi-container{
+        width: 50%;
+        display: flex;
+        align-self: flex-end;
+        
+    }
+}
+
+@mixin tours-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24%;
+    height: 44%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tours{
+   @include white-space(); 
+   
+}
+ .tours-gallery{
+    padding: 0 3% 0 3%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  .one{
+    background-image: url(img/image\ 20.png);
+    @include tours-image();
+    
+  }
+  .two{
+    background-image: url(img/image\ 10.png);
+    @include tours-image();
+  }
+  .three{
+    background-image: url(img/image\ 21.png);
+    @include tours-image();
+  }
+  .four{
+    background-image: url(img/image\ 3.png);
+    @include tours-image();
+  }
+  .five{
+    background-image: url(img/image\ 3.png);
+    @include tours-image();
+  }
+  .six{
+   background-image: url(img/carribean.jpeg);
+   @include tours-image();
+  }
+
+  .seven{
+   background-image: url(img/image\ 13.png);
+   @include tours-image();
+  }
+
+  .eight{
+    background-image: url(img/image\ 12.png);
+    @include tours-image();
+  }
+ }
+
+
+ footer{
+    background-color: $secondary-color;
+    color: white;
+    font-size: 14px;
+    padding: 0 8% 0 8%;
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        .foot-content{
+            width: 40%;
+            p{
+                padding-top: 30px;
+            }
+            ul{
+                display: flex;
+                gap: 10px;
+                padding-top: 20px;
+            }
+    
+        }
+
+        .contacts{
+            padding-top: 60px;
+            text-align: right;
+            h3{
+                font-weight: bold;
+                font-size: 25px;
+            }
+            #tripmail{
+                color: $primary-color;
+                padding-bottom: 20px;
+            }
+            ul{
+                display: flex;
+                justify-content: end;
+                padding-top: 10px;
+                gap: 10px;
+                li{
+                    a{
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    
+ }
